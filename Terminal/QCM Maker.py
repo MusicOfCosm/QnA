@@ -11,7 +11,7 @@ try:
     f = open(f'{filename}.py', 'x', encoding='utf-8')
 
     f.write('import sys\n')
-    f.write(r'sys.path.append(r"C:\Users\macky\OneDrive\Documents\Coding\Python\QCM")') #An r (raw) string considers \ as characters
+    f.write(r'') #An r (raw) string considers \ as characters
     f.write('\nfrom QCM import main\n')
     f.write('import random\n')
     f.write('import logging\n\n')
@@ -171,7 +171,7 @@ try:
     f.write('if __name__ == "__main__":\n')
     f.write('    main(question_list)')
 
-    print('\n\nYou have finished making your Q&A! Hopefully, you didn\'t mess it up, and the new file that you made will run properly. But you never know!\nAsk me if you have any questions, or problems!\n')
+    print('\n\nYou have finished making your Q&A! Hopefully, you didn\'t mess it up, and the new file that you made will run properly.')
     os.system("pause")
 
 except Exception as e:
